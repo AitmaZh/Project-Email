@@ -49,9 +49,9 @@ public class Email {
     // Условия для создания пароля
     private String randomPassword(int length) {
         String passwordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        char[] password = new char[length]; // security concern
+        char[] password = new char[length]; // Security concern
         for (int i = 0; i < length; i++) {
-            int rand = (int) (Math.random() * passwordSet.length()); // ?
+            int rand = (int) (Math.random() * passwordSet.length());
             password[i] = passwordSet.charAt(rand); // charAt() возвращает символ из массива строки по указанному индексу
         }
         return new String(password);
